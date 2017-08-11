@@ -4,7 +4,7 @@ import com.turekbros.games.jaquallamy.levels.Level1;
 
 import java.util.Scanner;
 
-public class TextBasedGame {
+public class Game {
     /**
      * This is how the user sends us input. Use methods like .next() and nextLine() to get input.
      */
@@ -13,8 +13,8 @@ public class TextBasedGame {
     /**
      * The user's name
      */
-    public static String name;
-    public static String land;
+    private static String name;
+    private static String land;
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Welcome to Jaquallamy, a Text Based Game by");
@@ -27,7 +27,7 @@ public class TextBasedGame {
                         "──╚╝─╚╝╚╩══╝──╚╝╚══╩╝╚══╩╝╚╩═══╩╝╚══╩══╝\n");
 
         System.out.println("What do you call yourself? ");
-        String name = keyboard.nextLine();
+        name = keyboard.nextLine();
 
         System.out.println("Ay, " + name + "...");
 
