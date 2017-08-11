@@ -2,6 +2,7 @@ package com.turekbros.games.jaquallamy.levels;
 
 import com.turekbros.games.jaquallamy.Game;
 
+import java.time.Duration;
 import java.util.Scanner;
 
 public class Level1 {
@@ -41,6 +42,16 @@ public class Level1 {
         System.out.println("You decide to " + action);
         System.out.println("");
 
+
+    }
+
+    /**
+     * A convenience method that prints out the message one key at a time in an effort to simulate someone
+     * talking or typing.
+     * @param message the message that will be output to the user, character by character
+     * @param delay the delay between outputting characters
+     */
+    private void say(String message, Duration delay) throws InterruptedException {
 
     }
 }
