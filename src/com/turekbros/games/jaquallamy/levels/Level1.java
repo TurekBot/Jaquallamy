@@ -1,11 +1,20 @@
 package com.turekbros.games.jaquallamy.levels;
 
+import com.turekbros.games.jaquallamy.TextBasedGame;
+
 import java.util.Scanner;
 
 public class Level1 {
+    /**
+     * This is how the user sends input.
+     */
 
     private static Scanner keyboard = new Scanner(System.in);
-
+    /**
+     * This is to access global things like the user's name and land
+     * Try game.getName(); or game.getLand();
+     */
+    private TextBasedGame game;
 
     public static void start  ()throws InterruptedException {
         String[] listLine = new String[500];
