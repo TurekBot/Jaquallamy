@@ -14,7 +14,7 @@ public class Level1 {
 
         System.out.println("What do you spy?");
         String answer = keyboard.nextLine();
-        System.out.println("Ah, you can now clearly see it is a " + answer + " coming towards you");
+        System.out.println("Ah, you can now definitely see it is a " + answer + " coming towards you.");
 
 
     }
