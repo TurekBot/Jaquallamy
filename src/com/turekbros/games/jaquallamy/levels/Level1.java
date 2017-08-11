@@ -22,10 +22,12 @@ public class Level1 {
         listLine[1] = "You are on a war-torn Plateau";
         listLine[2] = "\"Upon the horizon you spy something...\"";
         listLine[3] = "What do you spy?";
-
         System.out.println(listLine[0]);
+        for(int i = 0; i < listLine[0].length(); i++) { // for loop prints out the first line and delays it
+            System.out.println(listLine[1]);
+    Thread.sleep(1000L); //time is in milliseconds
+}
 
-        System.out.println(listLine[1]);
         System.out.println(listLine[2]);
 
         System.out.println(listLine[3]);
