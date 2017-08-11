@@ -27,7 +27,7 @@ public class TextBasedGame {
                         "──╚╝─╚╝╚╩══╝──╚╝╚══╩╝╚══╩╝╚╩═══╩╝╚══╩══╝\n");
 
         System.out.println("What do you call yourself? ");
-        String name = keyboard.nextLine();
+        name = keyboard.nextLine();
 
         System.out.println("Ay, " + name + "...");
 

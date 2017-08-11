@@ -34,7 +34,7 @@ public class Level1 {
         listLine[4] = "Ah, you can now definitely see it is " + answer + " coming towards you.";
 
         System.out.println("Ah, you can now definitely see it is " + answer + " coming towards you.");
-        System.out.println(game.getName() +" what will you do next?");
+        System.out.println(TextBasedGame.getName() +" what will you do next?");
         String action = keyboard.nextLine();
         System.out.println("You decide to " + action);
         System.out.println("");
