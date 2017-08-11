@@ -1,6 +1,6 @@
 package com.turekbros.games.jaquallamy.levels;
 
-import com.turekbros.games.jaquallamy.TextBasedGame;
+import com.turekbros.games.jaquallamy.Game;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class Level1 {
      * This is to access global things like the user's name and land
      * Try game.getName(); or game.getLand();
      */
-    private static TextBasedGame game;
+    private static Game game;
 
     public static void start  ()throws InterruptedException {
         String[] listLine = new String[500];
@@ -34,7 +34,7 @@ public class Level1 {
         listLine[4] = "Ah, you can now definitely see it is " + answer + " coming towards you.";
 
         System.out.println("Ah, you can now definitely see it is " + answer + " coming towards you.");
-        System.out.println(TextBasedGame.getName() +" what will you do next?");
+        System.out.println(Game.getName() +" what will you do next?");
         String action = keyboard.nextLine();
         System.out.println("You decide to " + action);
         System.out.println("");
