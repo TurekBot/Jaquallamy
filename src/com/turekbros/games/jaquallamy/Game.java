@@ -59,14 +59,14 @@ public class Game {
 
             say("Welcome to Jaquallamy, " + name + " of " + land, time);
 
-            // TODO: 8/10/2017 Let's add a method that automates the delay of text so that things look cleaner.
-            // TODO: 8/11/2017 Let's add
+        // TODO: 8/10/2017 Let's add a method that automates the delay of text so that things look cleaner. - Completed 8/11/2017
+        // TODO: 8/11/2017 Let's add a command detector so the user can use commands like !stats or !help no matter where they are in the game
             for (i = 0; i < 3; i++) {
                 System.out.print(".");
                 Thread.sleep(1000);
             }
 
-       say("Press any key to begin Level 1...", time);
+        say("Press the enter key to begin Level 1...", time);
 
             Scanner keyboard = new Scanner(System.in);
             keyboard.hasNextLine();
@@ -81,5 +81,9 @@ public class Game {
 
     public static String getLand() {
         return land;
+    }
+
+    public static String getJoke() {
+        return null;
     }
 }
