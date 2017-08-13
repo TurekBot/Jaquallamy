@@ -15,7 +15,7 @@ public class JokeList {
     String getRandomJoke() throws InterruptedException {//this method pulls from an array of Random Jokes to humor the player with
         int i = 0;
         Random r = new Random();
-        int jokeNumber = r.nextInt(20);
+        int jokeNumber = r.nextInt(5);
         for (i = 0; i < jokes[jokeNumber].length(); i++) {
             try {
                 Thread.sleep(1000);
