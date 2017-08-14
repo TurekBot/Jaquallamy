@@ -17,12 +17,12 @@ public class Game {
      */
     private static String name;
     private static String land;
-
+    public static int hp = 100, energy = 10;
 
     public static void main(String[] args) throws InterruptedException {
         int i;
         long time=50L;
-
+        boolean dead = false;
 
         say("\"Welcome to Jaquallamy, a Text Based Game by", time);
 
@@ -61,6 +61,7 @@ public class Game {
 
         // TODO: 8/10/2017 Let's add a method that automates the delay of text so that things look cleaner. - Completed 8/11/2017
         // TODO: 8/11/2017 Let's add a command detector so the user can use commands like !stats or !help no matter where they are in the game
+        // TODO: 8/14/2017 We need to add a win and lose condition, I've tried adding a while loop that checks for hp <= 0 which is checking death but it still needs work
             for (i = 0; i < 3; i++) {
                 System.out.print(".");
                 Thread.sleep(1000);
@@ -70,8 +71,15 @@ public class Game {
 
             Scanner keyboard = new Scanner(System.in);
             keyboard.hasNextLine();
+        while (dead != true) {
             Level1.start();
+            if (hp <= 0 || energy <= 0) {
+                dead = true;
+            }
+        }
 
+        say("you have died..", time);
+        System.exit(0);
         }
 
 
@@ -85,5 +93,9 @@ public class Game {
 
     public static String getJoke() {
         return null;
+    }
+
+    public static Integer getLiving() {
+        return hp;
     }
 }
